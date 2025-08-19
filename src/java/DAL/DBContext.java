@@ -20,7 +20,7 @@ public class DBContext {
 
     protected static Connection connection;
 
-    private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=bookstore4;encrypt=false";
+    private static final String URL = "jdbc:sqlserver://localhost:1433;databaseName=bookstore;encrypt=false";
     private static final String USER = "sa";  // Thay bằng username của bạn
     private static final String PASSWORD = "123";  // Thay bằng password của bạn
     private static final String DRIVER = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
