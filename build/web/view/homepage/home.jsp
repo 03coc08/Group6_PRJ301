@@ -1,9 +1,5 @@
-<%-- 
-    Document   : homepage
-    Created on : May 24, 2025, 12:03:02 AM
-    Author     : khanh
---%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html class="no-js" lang="zxx">
@@ -39,26 +35,26 @@
 
             <div class="slider-area">
                 <div class="slider-active owl-dot-style owl-carousel">
-                    <div class="single-slider pt-175 pb-258 bg-img" style="background-image:url(${pageContext.request.contextPath}/img/slider/slider-1.jpg);">
+                    <div class="single-slider pt-175 pb-258 bg-img" style="background-image:url(${pageContext.request.contextPath}/img/img_book/bia.png);">
                     <div class="container">
                         <div class="slider-content slider-animated-1">
                             <h3 class="animated">New Arrivals</h3>
                             <h1 class="animated">For Mother’s Day!</h1>
                             <h5 class="animated">Exclusive Offer -10% Off This Week</h5>
                             <div class="slider-btn mt-45">
-                                <a class="animated" href="product-details.jsp">shop Now</a>
+                                <a class="animated" href="product-details.jsp">checkOut</a>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="single-slider pt-175 pb-258 bg-img" style="background-image:url(${pageContext.request.contextPath}/img/slider/slider-2.jpg);">
+                <div class="single-slider pt-175 pb-258 bg-img" style="background-image:url(${pageContext.request.contextPath}/img/img_book/bia.png);">
                     <div class="container">
                         <div class="slider-content slider-animated-2">
                             <h3 class="animated">New Arrivals</h3>
                             <h1 class="animated">For Mother’s Day!</h1>
                             <h5 class="animated">Exclusive Offer -10% Off This Week</h5>
                             <div class="slider-btn mt-45">
-                                <a class="animated" href="product-details.jsp">shop Now</a>
+                                <a class="animated" href="product-details.jsp">Inventory</a>
                             </div>
                         </div>
                     </div>
@@ -72,18 +68,18 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="single-banner img-zoom mb-30">
                                 <a href="#">
-                                    <img src="${pageContext.request.contextPath}/img/banner/banner-1.png" alt="">
+                                    <img src="${pageContext.request.contextPath}/img/img_book/b1.png" alt="">
                                 </a>
                                 <div class="banner-content">
                                     <h4>Camellias</h4>
-                                    <a href="#">shop Now</a>
+                                    <a href="#">Reports</a>
                                 </div>
                             </div>
                         </div>
                         <div class="col-lg-4 col-md-4">
                             <div class="single-banner img-zoom mb-30">
                                 <a href="#">
-                                    <img src="${pageContext.request.contextPath}/img/banner/banner-2.png" alt="">
+                                    <img src="${pageContext.request.contextPath}/img/img_book/b2.png" alt="">
                                 </a>
                                 <div class="banner-content">
                                     <h4>Bergamot</h4>
@@ -94,11 +90,11 @@
                         <div class="col-lg-4 col-md-4">
                             <div class="single-banner mb-xs-banner img-zoom mb-30">
                                 <a href="#">
-                                    <img src="${pageContext.request.contextPath}/img/banner/banner-3.png" alt="">
+                                    <img src="${pageContext.request.contextPath}/img/img_book/b3.png" alt="">
                                 </a>
                                 <div class="banner-content">
                                     <h4>Bottlebrush</h4>
-                                    <a href="#">shop Now</a>
+                                    <a href="#">sBook Management</a>
                                 </div>
                             </div>
                         </div>
@@ -106,592 +102,45 @@
                 </div>
             </div>
         </div>
-        <div class="product-area pt-40 pb-70">
+         <div class="product-area pt-70 pb-70">
             <div class="container">
                 <div class="product-top-bar section-border mb-35">
                     <div class="section-title-wrap">
-                        <h3 class="section-title section-bg-white">Featured Products</h3>
-                    </div>
-                    <div class="product-tab-list nav section-bg-white">
-                        <a class="active" data-bs-toggle="tab" href="#tab1">
-                            <h4>All </h4>
-                        </a>
-                        <a data-bs-toggle="tab" href="#tab2">
-                            <h4>Winter </h4>
-                        </a>
-                        <a data-bs-toggle="tab" href="#tab3">
-                            <h4> Various  </h4>
-                        </a>
-                        <a data-bs-toggle="tab" href="#tab4">
-                            <h4>Greens </h4>
-                        </a>
+                        <h3 class="section-title section-bg-white">Hot Flower</h3>
                     </div>
                 </div>
-                <div class="tab-content jump">
-                    <div id="tab1" class="tab-pane active">
-                        <div class="featured-product-active owl-carousel product-nav">
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-1.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Dutchman's Breeches </a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-2.jpg">
-                                    </a>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Flowers Bouquet Pink	</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-3.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Evergreen Candytuft </a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-4.jpg">
-                                    </a>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Pearly Everlasting</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-2.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Yellow Loosestrife</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
+                <div class="featured-product-active hot-flower owl-carousel product-nav">
+                    <div class="product-wrapper">
+                        <div class="product-img">
+                            <<a href="product-details.jsp">
+                                <img alt="" src="${pageContext.request.contextPath}/img/product/product-5.jpg">
+                            </a>
+                            <span>-30%</span>
+                            <div class="product-action">
+                                <a class="action-wishlist" href="#" title="Wishlist">
+                                    <i class="icon-heart"></i>
+                                </a>
+                                <a class="action-cart" href="#" title="Add To Cart">
+                                    <i class="icon-handbag"></i>
+                                </a>
+                                <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
+                                    <i class="icon-magnifier-add"></i>
+                                </a>
                             </div>
                         </div>
-                    </div>
-                    <div id="tab2" class="tab-pane">
-                        <div class="featured-product-active owl-carousel product-nav">
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-5.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Golden Marguerite</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-6.jpg">
-                                    </a>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Pearly Everlasting</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-7.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Polka Dot Plant</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-8.jpg">
-                                    </a>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Glory of the Snow</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-6.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Jack in the Pulpit</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
+                        <div class="product-content text-center">
+                            <h4>
+                                <<a href="product-details.jsp">Pearly Everlasting</a>
+                            </h4>
+                            <div class="product-price-wrapper">
+                                <span>$100.00</span>
+                                <span class="product-price-old">$120.00 </span>
                             </div>
                         </div>
-                    </div>
-                    <div id="tab3" class="tab-pane">
-                        <div class="featured-product-active owl-carousel product-nav">
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-4.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <<a href="product-details.jsp">Dutchman's Breeches </a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <<a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-2.jpg">
-                                    </a>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <<a href="product-details.jsp">Flowers Bouquet Pink</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <<a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-1.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <<a href="product-details.jsp">Evergreen Candytuft </a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <<a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-3.jpg">
-                                    </a>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <<a href="product-details.jsp">Pearly Everlasting</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <<a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-2.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <<a href="product-details.jsp">Yellow Loosestrife</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab4" class="tab-pane">
-                        <div class="featured-product-active owl-carousel product-nav">
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <<a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-8.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <<a href="product-details.jsp">Golden Marguerite</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <<a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-6.jpg">
-                                    </a>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <<a href="product-details.jsp">Pearly Everlasting</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <<a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-5.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <<a href="product-details.jsp">Polka Dot Plant</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-7.jpg">
-                                    </a>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Glory of the Snow</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="product-wrapper">
-                                <div class="product-img">
-                                    <a href="product-details.jsp">
-                                        <img alt="" src="${pageContext.request.contextPath}/img/product/product-4.jpg">
-                                    </a>
-                                    <span>-30%</span>
-                                    <div class="product-action">
-                                        <a class="action-wishlist" href="#" title="Wishlist">
-                                            <i class="icon-heart"></i>
-                                        </a>
-                                        <a class="action-cart" href="#" title="Add To Cart">
-                                            <i class="icon-handbag"></i>
-                                        </a>
-                                        <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                            <i class="icon-magnifier-add"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="product-content text-center">
-                                    <h4>
-                                        <a href="product-details.jsp">Jack in the Pulpit</a>
-                                    </h4>
-                                    <div class="product-price-wrapper">
-                                        <span>$100.00</span>
-                                        <span class="product-price-old">$120.00 </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                    </div>  
             </div>
         </div>
-        <div class="testimonials-area bg-img pt-120 pb-115" style="background-image:url(${pageContext.request.contextPath}/img/bg/bg-1.jpg);">
+        <div class="testimonials-area bg-img pt-120 pb-115" style="background-image:url(${pageContext.request.contextPath}/img/img_book/bia2.png);">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-md-12 ms-auto col-12">
@@ -731,11 +180,12 @@
                 </div>
                 <div class="best-selling-wrap">
                     <div class="best-selling-active owl-carousel product-nav">
+                        <c:forEach items="${data1}" var="o">
                         <div class="single-best-selling">
                             <div class="row">
                                 <div class="col-lg-6 col-xl-5 col-md-6">
                                     <div class="single-best-img">
-                                        <img class="tilter" src="${pageContext.request.contextPath}/img/banner/deal-1.png" alt="">
+                                        <img class="tilter" src="${pageContext.request.contextPath}/img/img_book/anh (8).jpeg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-xl-7 col-md-6">
@@ -753,6 +203,7 @@
                                 </div>
                             </div>
                         </div>
+                                        </c:forEach>
                         <div class="single-best-selling">
                             <div class="row">
                                 <div class="col-lg-6 col-xl-5 col-md-6">
@@ -779,153 +230,7 @@
                 </div>
             </div>
         </div>
-        <div class="product-area pt-70 pb-70">
-            <div class="container">
-                <div class="product-top-bar section-border mb-35">
-                    <div class="section-title-wrap">
-                        <h3 class="section-title section-bg-white">Hot Flower</h3>
-                    </div>
-                </div>
-                <div class="featured-product-active hot-flower owl-carousel product-nav">
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <<a href="product-details.jsp">
-                                <img alt="" src="${pageContext.request.contextPath}/img/product/product-5.jpg">
-                            </a>
-                            <span>-30%</span>
-                            <div class="product-action">
-                                <a class="action-wishlist" href="#" title="Wishlist">
-                                    <i class="icon-heart"></i>
-                                </a>
-                                <a class="action-cart" href="#" title="Add To Cart">
-                                    <i class="icon-handbag"></i>
-                                </a>
-                                <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                    <i class="icon-magnifier-add"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-content text-center">
-                            <h4>
-                                <<a href="product-details.jsp">Pearly Everlasting</a>
-                            </h4>
-                            <div class="product-price-wrapper">
-                                <span>$100.00</span>
-                                <span class="product-price-old">$120.00 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <<a href="product-details.jsp">
-                                <img alt="" src="${pageContext.request.contextPath}/img/product/product-6.jpg">
-                            </a>
-                            <div class="product-action">
-                                <a class="action-wishlist" href="#" title="Wishlist">
-                                    <i class="icon-heart"></i>
-                                </a>
-                                <a class="action-cart" href="#" title="Add To Cart">
-                                    <i class="icon-handbag"></i>
-                                </a>
-                                <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                    <i class="icon-magnifier-add"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-content text-center">
-                            <h4>
-                                <<a href="product-details.jsp">Polka Dot Plant</a>
-                            </h4>
-                            <div class="product-price-wrapper">
-                                <span>$100.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <<a href="product-details.jsp">
-                                <img alt="" src="${pageContext.request.contextPath}/img/product/product-7.jpg">
-                            </a>
-                            <span>-30%</span>
-                            <div class="product-action">
-                                <a class="action-wishlist" href="#" title="Wishlist">
-                                    <i class="icon-heart"></i>
-                                </a>
-                                <a class="action-cart" href="#" title="Add To Cart">
-                                    <i class="icon-handbag"></i>
-                                </a>
-                                <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                    <i class="icon-magnifier-add"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-content text-center">
-                            <h4>
-                                <<a href="product-details.jsp">Glory of the Snow</a>
-                            </h4>
-                            <div class="product-price-wrapper">
-                                <span>$100.00</span>
-                                <span class="product-price-old">$120.00 </span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <<a href="product-details.jsp">
-                                <img alt="" src="${pageContext.request.contextPath}/img/product/product-8.jpg">
-                            </a>
-                            <div class="product-action">
-                                <a class="action-wishlist" href="#" title="Wishlist">
-                                    <i class="icon-heart"></i>
-                                </a>
-                                <a class="action-cart" href="#" title="Add To Cart">
-                                    <i class="icon-handbag"></i>
-                                </a>
-                                <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                    <i class="icon-magnifier-add"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-content text-center">
-                            <h4>
-                                <<a href="product-details.jsp">Jack in the Pulpit</a>
-                            </h4>
-                            <div class="product-price-wrapper">
-                                <span>$100.00</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="product-wrapper">
-                        <div class="product-img">
-                            <<a href="product-details.jsp">
-                                <img alt="" src="${pageContext.request.contextPath}/img/product/product-6.jpg">
-                            </a>
-                            <span>-30%</span>
-                            <div class="product-action">
-                                <a class="action-wishlist" href="#" title="Wishlist">
-                                    <i class="icon-heart"></i>
-                                </a>
-                                <a class="action-cart" href="#" title="Add To Cart">
-                                    <i class="icon-handbag"></i>
-                                </a>
-                                <a class="action-compare" href="#" data-bs-target="#exampleModal" data-bs-toggle="modal" title="Quick View">
-                                    <i class="icon-magnifier-add"></i>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="product-content text-center">
-                            <h4>
-                                <<a href="product-details.jsp">Flowers Bouquet Pink	</a>
-                            </h4>
-                            <div class="product-price-wrapper">
-                                <span>$100.00</span>
-                                <span class="product-price-old">$120.00 </span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+       
         <div class="new-year-offer-area pb-75">
             <div class="container">
                 <div class="new-year-offer-wrap pt-70 pb-75 bg-img" style="background-image:url(${pageContext.request.contextPath}/img/banner/banner-4.jpg);">

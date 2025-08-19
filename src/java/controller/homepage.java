@@ -11,7 +11,9 @@ import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
-
+import DAL.BookDAO;
+import model.Books;
+import java.util.ArrayList;
 /**
  *
  * @author Nguyen Van Manh
@@ -53,7 +55,12 @@ public class homepage extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
-        processRequest(request, response);
+        BookDAO dao = new BookDAO();
+        ArrayList<Books> data = dao.getTop8BestSellerBooks();
+        ArrayList<Books> data1 = dao.getTop1BestSellerBooks();
+        request.setAttribute("data", data);
+        request.setAttribute("data1", data);
+        request.getRequestDispatcher("/view/homepage/home.jsp").forward(request, response);
     } 
 
     /** 
